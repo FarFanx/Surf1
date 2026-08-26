@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce las partes de una tabla de surf con Surfeando con Henry.">
+    <title>Anatomía | Surfeando con Henry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="cursor"></div><div class="cursor-ring"></div>
+<div class="site-preloader"><img class="site-preloader-mark" src="assets/images/logo.png" alt="Logo Surfeando con Henry"><div class="site-preloader-line"><span></span></div><small>PREPARANDO LA SESIÓN</small></div>
+<header class="header">
+    <a href="index.html#home" class="logo"><img src="assets/images/logo.png" alt="Logo Surfeando con Henry">SURFEANDO<span>CON HENRY</span></a>
+    <nav class="navigation"><a href="index.html#home">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="clases.html">Clases</a><a href="anatomia.html" class="active">Anatomía</a><a href="tablas.html">Tablas</a><a href="experiencia.html">Experiencia</a><a href="index.html#conditions">Condiciones</a><a href="galeria.html">Galería</a></nav>
+    <a href="index.html#booking" class="header-button">Reservar clase</a>
+    <button class="mobile-menu-button" aria-label="Abrir menú"><span></span><span></span></button>
+</header>
+<div class="mobile-menu"><a href="index.html#home">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="clases.html">Clases</a><a href="anatomia.html">Anatomía</a><a href="tablas.html">Tablas</a><a href="experiencia.html">Experiencia</a><a href="index.html#conditions">Condiciones</a><a href="galeria.html">Galería</a><a href="index.html#booking">Reservar</a></div>
+<main>
+    <section class="anatomy-page-hero"><span class="section-label">ANATOMÍA INTERACTIVA</span><h1>Conoce <span>tu tabla.</span></h1><p>Explora cada parte y descubre cómo influye en tu forma de surfear.</p></section>
+    <section class="anatomy-section anatomy-page-section">
+        <div class="anatomy-sticky">
+            <div class="anatomy-heading"><span class="section-label">TOCA LOS PUNTOS</span><h2>Todo tiene una <span>función.</span></h2><p>Selecciona un punto de la tabla para conocerlo.</p></div>
+            <div class="interactive-board anatomy-page-board">
+                <div class="board-aura"></div>
+                <img class="surfboard-photo main-surfboard" src="assets/images/tabla-blanca-final.jpg" alt="Tabla de surf de Surfeando con Henry">
+                <button class="hotspot" data-part="nose" style="top:7%;left:50%" aria-label="Nose"><span></span></button>
+                <button class="hotspot" data-part="stringer" style="top:48%;left:50%" aria-label="Stringer"><span></span></button>
+                <button class="hotspot" data-part="rail" style="top:48%;left:27%" aria-label="Rails"><span></span></button>
+                <button class="hotspot" data-part="center" style="top:38%;left:50%" aria-label="Centro"><span></span></button>
+                <button class="hotspot" data-part="pad" style="top:77%;left:50%" aria-label="Pad"><span></span></button>
+                <button class="hotspot" data-part="tail" style="top:94%;left:50%" aria-label="Tail"><span></span></button>
+            </div>
+            <aside class="info-card"><div class="info-card-top"><span id="infoNumber">01</span><span class="info-category">COMPONENTE</span></div><div class="info-content"><span class="info-mini">SELECCIONA UNA PARTE</span><h3 id="infoTitle">Explora la tabla</h3><p id="infoDescription">Pasa el cursor por los puntos para comenzar a descubrir la anatomía de la tabla.</p></div><div class="info-stats"><div><span>FUNCIÓN</span><strong id="infoFunction">-</strong></div><div><span>INFLUENCIA</span><strong id="infoInfluence">-</strong></div></div><div class="info-progress"><div class="progress-label"><span>IMPACTO</span><strong id="infoPercent">0%</strong></div><div class="progress-track"><span id="infoProgress"></span></div></div><div class="info-tip"><span>CONSEJO DE HENRY</span><p id="infoTip">Empieza por una parte y descubre cómo cambia la respuesta de tu tabla.</p></div></aside>
+        </div>
+    </section>
+    <section class="stance-section">
+        <div class="stance-heading">
+            <span class="section-label">POSTURAS EN LA TABLA</span>
+            <h2>Muévete con <span>control.</span></h2>
+            <p>Explora las posiciones básicas y entiende cómo repartir tu peso sobre la tabla.</p>
+        </div>
+        <div class="stance-explorer">
+            <div class="stance-stage" aria-label="Imagen interactiva de posturas de surf">
+                <span class="stance-waterline"></span>
+                <img id="stanceImage" src="assets/images/henry-surfeando.jpg" alt="Henry de pie sobre una tabla de surf">
+                <span class="stance-stage-label" id="stanceStageLabel">DE PIE / EQUILIBRIO</span>
+            </div>
+            <div class="stance-controls">
+                <div class="stance-tabs" role="tablist" aria-label="Seleccionar postura">
+                    <button class="stance-tab is-active" type="button" data-stance="stand" role="tab" aria-selected="true">De pie</button>
+                    <button class="stance-tab" type="button" data-stance="paddle" role="tab" aria-selected="false">Remando</button>
+                    <button class="stance-tab" type="button" data-stance="pop-up" role="tab" aria-selected="false">Pop-up</button>
+                </div>
+                <span class="stance-step" id="stanceStep">01 / 03</span>
+                <h3 id="stanceTitle">De pie sobre la tabla</h3>
+                <p id="stanceDescription">Rodillas flexionadas, mirada al frente y peso repartido entre ambos pies para mantener el equilibrio.</p>
+                <div class="stance-meter"><span id="stanceMeterFill"></span></div>
+                <small>Arrastra la imagen para explorar el movimiento</small>
+            </div>
+        </div>
+    </section>
+</main>
+<footer><div class="footer-brand"><div class="footer-logo">SURFEANDO <span>CON HENRY</span></div><p>Aprende. Surfea. Vive.</p></div><div class="footer-links"><a href="index.html#home">Inicio</a><a href="clases.html">Clases</a><a href="tablas.html">Tablas</a><a href="experiencia.html">Experiencia</a><a href="galeria.html">Galería</a><a href="index.html#booking">Reservar</a></div><div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="https://wa.me/51961385016" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a></div><span class="footer-copy">© 2026 Surfeando con Henry</span></footer>
+<a class="whatsapp-button" href="https://wa.me/51961385016" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">☏</a>
+<script src="script.js"></script>
+</body>
+</html>

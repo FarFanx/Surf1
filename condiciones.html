@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Condiciones del océano en Lobitos con Surfeando con Henry.">
+    <title>Condiciones | Surfeando con Henry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="cursor"></div><div class="cursor-ring"></div>
+<div class="site-preloader"><img class="site-preloader-mark" src="assets/images/logo.png" alt="Logo Surfeando con Henry"><div class="site-preloader-line"><span></span></div><small>PREPARANDO LA SESIÓN</small></div>
+<header class="header">
+    <a href="index.html#home" class="logo"><img src="assets/images/logo.png" alt="Logo Surfeando con Henry">SURFEANDO<span>CON HENRY</span></a>
+    <nav class="navigation"><a href="index.html#home">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="clases.html">Clases</a><a href="anatomia.html">Anatomía</a><a href="tablas.html">Tablas</a><a href="experiencia.html">Experiencia</a><a href="condiciones.html" class="active">Condiciones</a><a href="galeria.html">Galería</a></nav>
+    <a href="index.html#booking" class="header-button">Reservar clase</a>
+    <button class="mobile-menu-button" aria-label="Abrir menú"><span></span><span></span></button>
+</header>
+<div class="mobile-menu"><a href="index.html#home">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="clases.html">Clases</a><a href="anatomia.html">Anatomía</a><a href="tablas.html">Tablas</a><a href="experiencia.html">Experiencia</a><a href="condiciones.html">Condiciones</a><a href="galeria.html">Galería</a><a href="index.html#booking">Reservar</a></div>
+<main>
+    <section class="conditions-page-hero"><span class="section-label">LOBITOS · PIURA</span><h1>Condiciones <span>de hoy.</span></h1><p>Consulta el clima, el viento, el oleaje y la marea antes de entrar al agua.</p></section>
+    <section class="conditions-section conditions-page-section" id="conditions">
+        <div class="conditions-heading"><span class="section-label">DATOS EN VIVO</span><h2>Así está el <span>océano.</span></h2><p>Información actualizada para ayudarte a elegir el mejor momento para tu sesión.</p></div>
+        <div class="conditions-location"><span class="live-dot"></span><strong id="conditionsLocation">Lobitos, Piura</strong><small id="conditionsUpdated">Actualizando condiciones...</small></div>
+        <div class="conditions-grid">
+            <article class="condition-card weather-card"><div class="condition-card-top"><span>CLIMA</span><b>°</b></div><strong id="weatherTemperature">--°</strong><div class="weather-meter" aria-hidden="true"><span id="weatherMeterFill"></span></div><p id="weatherSummary">Cargando...</p></article>
+            <article class="condition-card wind-card"><div class="condition-card-top"><span>VIENTO</span><b id="windCompassArrow">↑</b></div><strong id="windSpeed">-- km/h</strong><div class="wind-compass" aria-hidden="true"><span>N</span><i></i><span>S</span></div><p id="windDirection">Dirección pendiente</p></article>
+            <article class="condition-card wave-card"><div class="condition-card-top"><span>OLEAJE</span><b>≈</b></div><strong id="waveHeight">-- m</strong><div class="wave-meter" aria-hidden="true"><svg viewBox="0 0 180 54" preserveAspectRatio="none"><path class="wave-chart-area" d="M 0 54 L 0 34 C 24 18 42 18 66 34 S 108 50 132 34 S 162 18 180 31 L 180 54 Z"></path><path class="wave-chart-line" d="M 0 34 C 24 18 42 18 66 34 S 108 50 132 34 S 162 18 180 31"></path></svg><span id="waveMeterFill"></span></div><p id="wavePeriod">Periodo pendiente</p></article>
+            <article class="condition-card tide-card"><div class="tide-card-top"><span>MAREAS</span><b id="tideTrendIcon">~</b></div><strong id="tideStatus">-- m</strong><div class="tide-visual" aria-hidden="true"><svg id="tideChart" viewBox="0 0 180 54" preserveAspectRatio="none"><path class="tide-chart-area" d="M 0 54 L 0 35 L 45 30 L 90 36 L 135 22 L 180 28 L 180 54 Z"></path><polyline class="tide-chart-line" points="0,35 45,30 90,36 135,22 180,28"></polyline><circle class="tide-chart-dot" cx="90" cy="27" r="4"></circle></svg><span id="tideLevelFill"></span></div><p id="tideSummary">Calculando marea...</p></article>
+        </div>
+    </section>
+</main>
+<footer><div class="footer-brand"><div class="footer-logo">SURFEANDO <span>CON HENRY</span></div><p>Aprende. Surfea. Vive.</p></div><div class="footer-links"><a href="index.html#home">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="clases.html">Clases</a><a href="anatomia.html">Anatomía</a><a href="tablas.html">Tablas</a><a href="experiencia.html">Experiencia</a><a href="condiciones.html">Condiciones</a><a href="galeria.html">Galería</a><a href="index.html#booking">Reservar</a></div><div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="https://wa.me/51961385016" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a></div><span class="footer-copy">© 2026 Surfeando con Henry</span></footer>
+<a class="whatsapp-button" href="https://wa.me/51961385016" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">☏</a>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de tablas de surf Surfeando con Henry con características y descripciones.">
+    <title>Tablas | Surfeando con Henry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="cursor"></div><div class="cursor-ring"></div>
+
+<div class="site-preloader"><img class="site-preloader-mark" src="assets/images/logo.png" alt="Logo Surfeando con Henry"><div class="site-preloader-line"><span></span></div><small>PREPARANDO LA SESIÓN</small></div>
+
+<header class="header">
+    <a href="index.html#home" class="logo"><img src="assets/images/logo.png" alt="Logo Surfeando con Henry">SURFEANDO<span>CON HENRY</span></a>
+    <nav class="navigation">
+        <a href="index.html#home">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="clases.html">Clases</a>
+        <a href="anatomia.html">Anatomía</a>
+        <a href="tablas.html" class="active">Tablas</a>
+
+        <a href="experiencia.html">Experiencia</a>
+        <a href="index.html#conditions">Condiciones</a>
+        <a href="galeria.html">Galería</a>
+    </nav>
+    <a href="index.html#booking" class="header-button">Reservar clase</a>
+    <button class="mobile-menu-button" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<div class="mobile-menu">
+    <a href="index.html#home">Inicio</a>
+    <a href="sobre-mi.html">Sobre mí</a>
+    <a href="clases.html">Clases</a>
+    <a href="anatomia.html">Anatomía</a>
+    <a href="tablas.html">Tablas</a>
+
+    <a href="experiencia.html">Experiencia</a>
+    <a href="index.html#conditions">Condiciones</a>
+    <a href="galeria.html">Galería</a>
+    <a href="index.html#booking">Reservar</a>
+</div>
+
+<main>
+    <section class="catalog-section" id="catalog">
+        <div class="catalog-heading">
+            <span class="section-label">CATÁLOGO DE TABLAS</span>
+            <h2>Explora todas las <span>tablas.</span></h2>
+            <p>Elige una tabla y pulsa “Ver más” para conocer todos sus detalles.</p>
+        </div>
+
+        <div class="catalog-tools">
+            <label class="board-search">
+                <span>Buscar</span>
+                <input type="search" id="boardSearch" placeholder="Buscar por nombre o estilo" aria-label="Buscar tablas">
+            </label>
+            <div class="board-filters" role="group" aria-label="Filtrar tablas">
+                <button class="board-filter active" type="button" data-filter="all">Todas</button>
+                <button class="board-filter" type="button" data-filter="beginner">Principiantes</button>
+                <button class="board-filter" type="button" data-filter="progression">Progresión</button>
+                <button class="board-filter" type="button" data-filter="performance">Performance</button>
+            </div>
+        </div>
+
+        <div class="board-catalog" id="boardCatalog">
+            <article class="catalog-card" data-category="beginner" data-board-title="Marea Longboard" data-board-type="LONGBOARD · PRINCIPIANTES" data-board-description="Amplia, estable y fácil de remar. La compañera ideal para aprender a leer las olas y ganar confianza." data-board-specs="8'0 · 55L · Estabilidad">
+                <div class="catalog-card-image">
+                    <img src="assets/images/tabla-blanca-final.jpg" alt="Marea Longboard" loading="lazy">
+                    <a class="board-view-button" href="marea-longboard.html" aria-label="Ver más sobre Marea Longboard">VER MÁS <span>↗</span></a>
+                </div>
+                <div class="catalog-card-copy">
+                    <span>01 / LONGBOARD</span>
+                    <h3>Marea Longboard</h3>
+                    <p>Estabilidad y control para tus primeras olas.</p>
+                    <strong>8'0 · 55L · Estabilidad</strong>
+                </div>
+            </article>
+
+            <article class="catalog-card" data-category="progression" data-board-title="Brisa Funboard" data-board-type="FUNBOARD · PROGRESIÓN" data-board-description="El punto medio perfecto: suficiente volumen para remar cómodo y una respuesta ágil para seguir mejorando." data-board-specs="7'2 · 48L · Versátil">
+                <div class="catalog-card-image">
+                    <img src="assets/images/tabla-blanca-final.jpg" alt="Brisa Funboard" loading="lazy">
+                    <a class="board-view-button" href="brisa-funboard.html" aria-label="Ver más sobre Brisa Funboard">VER MÁS <span>↗</span></a>
+                </div>
+                <div class="catalog-card-copy">
+                    <span>02 / FUNBOARD</span>
+                    <h3>Brisa Funboard</h3>
+                    <p>Una tabla versátil para progresar sin límites.</p>
+                    <strong>7'2 · 48L · Versátil</strong>
+                </div>
+            </article>
+
+            <article class="catalog-card" data-category="performance" data-board-title="Rayo Shortboard" data-board-type="SHORTBOARD · PERFORMANCE" data-board-description="Rápida y reactiva para surfistas que buscan más velocidad, giros precisos y una sensación de alto rendimiento." data-board-specs="6'2 · 32L · Performance">
+                <div class="catalog-card-image">
+                    <img src="assets/images/tabla-blanca-final.jpg" alt="Rayo Shortboard" loading="lazy">
+                    <a class="board-view-button" href="rayo-shortboard.html" aria-label="Ver más sobre Rayo Shortboard">VER MÁS <span>↗</span></a>
+                </div>
+                <div class="catalog-card-copy">
+                    <span>03 / SHORTBOARD</span>
+                    <h3>Rayo Shortboard</h3>
+                    <p>Respuesta rápida para llevar tu surfing más lejos.</p>
+                    <strong>6'2 · 32L · Performance</strong>
+                </div>
+            </article>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div class="footer-brand">
+        <div class="footer-logo">SURFEANDO <span>CON HENRY</span></div>
+        <p>Aprende. Surfea. Vive.</p>
+    </div>
+    <div class="footer-links">
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="clases.html">Clases</a>
+        <a href="tablas.html">Tablas</a>
+
+        <a href="experiencia.html">Experiencia</a>
+        <a href="index.html#booking">Reservar</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><span aria-hidden="true">◎</span></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+        <a href="https://wa.me/51999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><span aria-hidden="true">☏</span></a>
+    </div>
+    <span class="footer-copy">© 2026 Surfeando con Henry</span>
+</footer>
+
+<a class="whatsapp-button" href="https://wa.me/51999999999?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20tablas%20de%20surf." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><span aria-hidden="true">☏</span></a>
+
+<script src="script.js"></script>
+</body>
+</html>
